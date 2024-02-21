@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interaction methods & Type Conversion</title>
+  </head>
+  <body>
+    <h3>Interaction methods and Type conversion</h3>
+    <button onclick="myFunction()">Click me</button>
+
+    <input type="text" id="element" oninput="update()" />
+    <p id="output"></p>
+
+    <script>
+      // 3. Interaction methods:
+      // 1. Use `prompt` to ask the user for their name and store it in a variable.
+      let userName = prompt("What is your name?");
+      console.log(userName);
+
+      // 2. Display an alert with a custom message using `alert`.
+      let message = alert("Are you sure to delete?");
+
+      // 3. Get input from the user using `confirm` and store the result in a variable.
+      let msg = confirm("Are you sure you want to proceed?");
+      console.log(msg);
+
+      // 4. Use `prompt` to get a number from the user, convert it to a numeric type, and perform an arithmetic operation.
+      let userInput = prompt("Enter a number:");
+      let userNumber = parseFloat(userInput);
+      let result = userNumber + 2;
+      console.log(result);
+
+      // 5. Create a simple webpage with a button, and use `onclick` to trigger a function.
+
+      function myFunction() {
+        alert("Button clicked!");
+      }
+
+      // 6. Use `prompt` to get two numbers from the user and display their sum using an alert.
+
+      let num1 = prompt("Enter the first number:");
+      let num2 = prompt("Enter the second number:");
+      let sum = Number(num1) + Number(num2);
+      let ans = alert("The sum is: " + sum);
+      console.log("The sum is: " + sum);
+
+      // 7. Create an input field and use `oninput` to update another element dynamically.
+
+      function update() {
+        let element = document.getElementById("element").value;
+        document.getElementById("output").innerText = "Input value: " + element;
+      }
+
+      // 8. Ask the user a yes/no question using `confirm` and display the result in the console.
+      let confirmmsg = confirm("Do you like coffe?");
+      console.log("Confirm Message:", confirmmsg);
+
+      // 9. Use `prompt` to get a string from the user and display it reversed.
+      let str1 = prompt("Enter a string:");
+      let str2 = str1.split("").reverse().join("");
+      reversestring = alert("Reversed string: " + str2);
+      console.log(reversestring)
+
+      // 10. Create a countdown timer that starts when the page loads using `setTimeout`.
+
+      // 4. Type Conversion:
+      // 1. Convert a string to a number and perform an arithmetic operation.
+      let strNum = "10";
+      let num = Number(strNum);
+      let res = num + 2;
+      console.log(res);
+
+      // 2. Convert a number to a string and concatenate it with another string.
+      let val = 5;
+      let str = "The number is: " + String(num);
+      console.log(str);
+
+      // 3. Convert a boolean to a string and check its type using `typeof`.
+      let bool = true;
+      let string1 = String(bool);
+      console.log(typeof string1);
+
+      // 4. Convert a string to a boolean and evaluate its truthiness.
+      let strbool = "true";
+      let boolstr = Boolean(strbool);
+      if (boolstr) {
+        console.log("The string is true");
+      } else {
+        console.log("The string is false");
+      }
+
+      // 5. Convert a number to a boolean and check its type using `typeof`.
+      let value = 5;
+      let boolValue = Boolean(num);
+      console.log(typeof boolValue);
+
+      // 6. Use `parseInt` and `parseFloat` to convert a string with a numeric value to a number.
+
+      let strNum1 = "15.5";
+      let intNum = parseInt(strNum1);
+      console.log(typeof intNum,intNum);
+      let floatNum = parseFloat(strNum1);
+      console.log(typeof floatNum,floatNum);
+
+      // 7. Convert a string representing a date to a `Date` object.
+      let dateString = "2024-02-07";
+      let dateObject = new Date(dateString);
+      console.log(typeof dateObject,dateObject);
+
+      // 8. Convert a number to a BigInt.
+      let Bignum = 12345678901234567890n;
+      console.log(typeof Bignum,Bignum);
+
+      // 9. Use the `String` constructor to convert a number to a string.
+      let numval = 42;
+      let strname = String(num);
+      console.log(typeof strname,strname);
+
+      // 10. Convert a boolean to a number and check its value.
+      let boolname = true;
+      let numValue = Number(bool);
+      console.log(typeof numValue,numValue);
+    </script>
+  </body>
+</html>

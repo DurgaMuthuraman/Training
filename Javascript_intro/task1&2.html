@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Javascript-Introdution" />
+    <title>Javascript-Introdution</title>
+  </head>
+  <body>
+    <h3>Javascript-Introdution</h3>
+
+    <script ="script.js">
+      // 1. Declare a variable named `name` and assign your name to it.
+      name = `Durga Muthuraman`;
+      console.log("Name :", name);
+
+      // 2. Create a variable `age` and assign your age to it.
+      age = 23;
+      console.log(age);
+
+      // 3. Declare a constant `PI` and assign the value of π (pi) to it.
+      const pi = 3.14;
+      console.log(pi);
+
+      // 4. Write a comment explaining the purpose of your code.
+      //comment
+
+      // 5. Combine two variables, `firstName` and `lastName`, and store the result in a variable called `fullName`.
+      firstName = `Durga`;
+      lastName = `Muthuraman`;
+      fullName = firstName + " " + lastName;
+      console.log(fullName);
+
+      // 6. Swap the values of two variables, `a` and `b`, without using a third variable.
+      a = 5;
+      b = 6;
+      [a, b] = [b, a];
+      console.log(a);
+      console.log(b);
+
+      // 7. Use the `typeof` operator to determine the type of a variable named `exampleVar`.
+      let exampleVar = "55";
+      console.log(typeof exampleVar);
+
+      // 8. Create a variable named `isStudent` and assign a boolean value to it.
+      let isStudent = false;
+      console.log(isStudent);
+
+      // 9. Declare a variable `myArray` and assign an array with three elements to it.
+      myArray = [0, 1, 2];
+      console.log(myArray);
+
+      // 10. Use the `console.log` method to print the value of a variable named `output`.
+      output = age;
+      console.log(output);
+
+      //      Datatypes – Number, BigInt, Boolean, null, undefined, strings, objects, arrays:
+      // 1. Perform arithmetic operations (addition, subtraction, multiplication) on two number variables.
+      a = 5;
+      b = 6;
+      c = a + b;
+      d = b - a;
+      e = a * b;
+      console.log(c);
+      console.log(d);
+      console.log(e);
+
+      // 2. Create a BigInt variable and assign a large integer value to it.
+
+      let bigInt = BigInt(809090290190091909);
+      console.log(bigInt);
+      console.log(typeof bigInt);
+
+      // 3. Declare a boolean variable `isRaining` and assign its value based on the weather.
+      let isRaining = false;
+      console.log(isRaining);
+      console.log(typeof isRaining);
+
+      // 4. Assign `null` to a variable named `nullVariable`.
+      let nullVariable = null;
+      console.log(typeof nullVariable);
+
+      // 5. Create a variable `undefinedVar` without assigning any value to it.
+      let undefinedVar;
+      console.log(undefinedVar);
+
+      // 6. Concatenate two strings and store the result in a new variable.
+      let string1 = "Hello";
+      let string2 = "Js!";
+      console.log(string1 + " " + string2);
+
+      // 7. Create an object representing a person with properties like name, age, and address.
+      let personalDetails = {
+        name: "Durga",
+        age: 23,
+        address: "Dindigul",
+      };
+      console.log(personalDetails);
+      // 8. Define an array with at least five different data types.
+      let arr = [1, "one", true, null, { name: "Durga" }];
+      console.log(arr);
+
+      // 9. Access the second element of an array and store it in a variable.
+      let element = arr[1];
+      console.log(element);
+
+      // 10. Convert a number to a string and vice versa.
+      let num = String(20);
+      let str = Number("20");
+      console.log(typeof num, num);
+      console.log(typeof str, str);
+    </script>
+  </body>
+</html>
